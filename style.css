@@ -2,10 +2,9 @@ header {
     background-color: #ffdd00;
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
 }
 
 header ul li {
     display: inline;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
 }
