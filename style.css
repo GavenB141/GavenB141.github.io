@@ -3,6 +3,6 @@ header {
     position: fixed;
 }
 
-header * {
+header ul li {
     display: inline;
 }
