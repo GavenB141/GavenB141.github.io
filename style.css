@@ -1,4 +1,5 @@
 header {
     background-color: #ffdd00;
     position: fixed;
+    display: inline;
 }
