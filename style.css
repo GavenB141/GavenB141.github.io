@@ -6,6 +6,10 @@ header {
     width:100%;
 }
 
-header ul li {
+cards li {
     display: inline;
+}
+
+price {
+    text-align:right
 }
