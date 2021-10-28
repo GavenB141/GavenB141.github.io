@@ -14,35 +14,6 @@
 
     <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!---->
-    <script>
-        let data = [
-                        {
-                            "name": "1 Banana",
-                            "price": 1.99,
-                            "image": "/assets/singlebanana.jpg"
-                        },
-                        {
-                            "name": "2 Bananas",
-                            "price": 2.99,
-                            "image": "/assets/doublebanana.jpg"
-                        }
-                    ]
-
-        data.forEach(product => {
-            console.log(product);
-            $("#products").append(`
-            <li class="card">
-                <img class="card-img-top" src="${product['image']}" alt="Banana">
-                <div class="card-body">
-                    <h4><a href="index.html">${product['name']}</a></h4>
-                    <h6 class = "price">${product['price']}</h6>
-                </div>
-            </li>
-            `);
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -63,6 +34,34 @@
                 <h6 class = "price">$2.99</h6>
             </div>
         </li>
+        <!---->
+        <script>
+            let data = [
+                            {
+                                "name": "1 Banana",
+                                "price": 1.99,
+                                "image": "/assets/singlebanana.jpg"
+                            },
+                            {
+                                "name": "2 Bananas",
+                                "price": 2.99,
+                                "image": "/assets/doublebanana.jpg"
+                            }
+                        ]
+
+            data.forEach(product => {
+                console.log(product);
+                $("#products").append(`
+                <li class="card">
+                    <img class="card-img-top" src="${product['image']}" alt="Banana">
+                    <div class="card-body">
+                        <h4><a href="index.html">${product['name']}</a></h4>
+                        <h6 class = "price">${product['price']}</h6>
+                    </div>
+                </li>
+                `);
+            });
+        </script>
     </ul>
 </body>
 </html>
