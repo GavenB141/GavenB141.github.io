@@ -20,21 +20,7 @@
         <img src="/assets/title.png">
     </header>
     <ul class="cards" id="products">
-        <li class="card">
-            <img class="card-img-top" src="/assets/singlebanana.jpg" alt="Banana">
-            <div class="card-body">
-                <h4><a href="index.html">1 Banana</a></h4>
-                <h6 class = "price">$1.99</h6>
-            </div>
-        </li>
-        <li class="card">
-            <img class="card-img-top" src="/assets/doublebanana.jpg" alt="Banana">
-            <div class="card-body">
-                <h4><a href="index.html">2 Bananas</a></h4>
-                <h6 class = "price">$2.99</h6>
-            </div>
-        </li>
-        <!---->
+        <!--Algorithmically add cards-->
         <script>
             let data = [
                             {
@@ -44,8 +30,18 @@
                             },
                             {
                                 "name": "2 Bananas",
-                                "price": 2.99,
+                                "price": 2.49,
                                 "image": "/assets/doublebanana.jpg"
+                            },
+                            {
+                                "name": "3 Bananas",
+                                "price": 3.99,
+                                "image": "/assets/triplebanana.jpg"
+                            },
+                            {
+                                "name": "Brown Banana",
+                                "price": 0.49,
+                                "image": "/assets/brownbanana.jpg"
                             }
                         ]
 
@@ -56,7 +52,7 @@
                     <img class="card-img-top" src="${product['image']}" alt="Banana">
                     <div class="card-body">
                         <h4><a href="index.html">${product['name']}</a></h4>
-                        <h6 class = "price">${product['price']}</h6>
+                        <h6 class = "price">$${product['price']}</h6>
                     </div>
                 </li>
                 `);
