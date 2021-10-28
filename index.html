@@ -12,12 +12,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!---->
+    <script>
+        const data = require('./products.json');
+
+        $("#products").append(`
+        <li class="card">
+            <img class="card-img-top" src="${data[0]['image']}" alt="Banana">
+            <div class="card-body">
+                <h4><a href="index.html">${data[0]['name']}</a></h4>
+                <h6 class = "price">${data[0]['price']}</h6>
+            </div>
+        </li>
+        `);
+    </script>
 </head>
 <body>
     <header>
         <img src="/assets/title.png">
     </header>
-    <ul class="cards">
+    <ul class="cards" id="products">
         <li class="card">
             <img class="card-img-top" src="/assets/singlebanana.jpg" alt="Banana">
             <div class="card-body">

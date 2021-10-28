@@ -1,0 +1,12 @@
+[
+    {
+        "name": "1 Banana",
+        "price": 1.99,
+        "image": "/assets/singlebanana.jpg"
+    },
+    {
+        "name": "2 Bananas",
+        "price": 2.99,
+        "image": "/assets/doublebanana.jpg"
+    }
+]
