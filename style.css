@@ -6,6 +6,10 @@ header {
     width:100%;
 }
 
+html {
+    background-color:#fff8d1;
+}
+
 li {
     width: 225px;
     margin: 15px;
