@@ -23,7 +23,7 @@
         return response.json();
         })
         .then(list => {data = list;});
-
+        console.log(typeof(data));
         $("#products").append(`
         <li class="card">
             <img class="card-img-top" src="${data[0]['image']}" alt="Banana">
