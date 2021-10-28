@@ -22,7 +22,7 @@
         .then(response => {
         return response.json();
         })
-        .then(list => {data = list;});
+        .then(list => {data = list[0];});
         console.log(typeof(data));
         $("#products").append(`
         <li class="card">
