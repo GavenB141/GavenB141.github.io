@@ -17,22 +17,30 @@
 
     <!---->
     <script>
-        let data = [];
-        fetch("./products.json")
-        .then(response => {
-        return response.json();
-        })
-        .then(list => {data = list[0];});
-        console.log(typeof(data));
-        $("#products").append(`
-        <li class="card">
-            <img class="card-img-top" src="${data[0]['image']}" alt="Banana">
-            <div class="card-body">
-                <h4><a href="index.html">${data[0]['name']}</a></h4>
-                <h6 class = "price">${data[0]['price']}</h6>
-            </div>
-        </li>
-        `);
+        let data = [
+                        {
+                            "name": "1 Banana",
+                            "price": 1.99,
+                            "image": "/assets/singlebanana.jpg"
+                        },
+                        {
+                            "name": "2 Bananas",
+                            "price": 2.99,
+                            "image": "/assets/doublebanana.jpg"
+                        }
+                    ]
+
+        data.forEach(product => {
+            $("#products").append(`
+            <li class="card">
+                <img class="card-img-top" src="${product['image']}" alt="Banana">
+                <div class="card-body">
+                    <h4><a href="index.html">${product['name']}</a></h4>
+                    <h6 class = "price">${product['price']}</h6>
+                </div>
+            </li>
+            `);
+        });
     </script>
 </head>
 <body>
