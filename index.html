@@ -17,7 +17,12 @@
 
     <!---->
     <script>
-        const data = require('./products.json');
+        let data = [];
+        fetch("./products.json")
+        .then(response => {
+        return response.json();
+        })
+        .then(list => {data = list;});
 
         $("#products").append(`
         <li class="card">
