@@ -10,12 +10,15 @@ html {
     background-color:#fff8d1;
 }
 
-li {
+.cards li {
     width: 225px;
+    height: 319px;
     margin: 15px;
     float: left
 }
 
-price {
-    float:right;
+.price {
+    position:absolute;
+    bottom:0px;
+    right:8px;
 }
